@@ -1,0 +1,53 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/boston_dynamics/atlas/protos/Atlas.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+  FPS 144
+}
+Viewpoint {
+  orientation 0.16072108039151958 0.0775990245717705 -0.9839446761395138 2.180281740141237
+  position 5.085663893404827 7.94402036269754 4.12242284555386
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+}
+Atlas {
+  translation -0.19959 -0.688263 1.06921
+  rotation -0.016981793625948722 -0.04253548403446878 -0.9989506250477044 -1.0198953071795867
+  controller "atlas_controller"
+}
+CircleArena {
+  radius 10
+  floorTileSize 1 1
+}
+WoodenBox {
+  translation -0.805505 -0.44833 1.1
+  rotation 0 0 1 1.0472
+  name "wooden box(4)"
+}
+WoodenBox {
+  translation 0.346307 -1.11333 1.1
+  rotation 0 0 1 1.0472
+  name "wooden box(1)"
+}
+WoodenBox {
+  translation -0.828548 -0.519964 0.3
+  rotation 0 0 1 1.0472
+  name "wooden box(2)"
+}
+WoodenBox {
+  translation 0.229454 -1.21138 0.3
+  rotation 0 0 1 1.0472
+  name "wooden box(3)"
+}
+WoodenBox {
+  translation -0.545911 -1.29034 0.3
+  rotation 0 0 1 1.0472
+}
