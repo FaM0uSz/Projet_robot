@@ -1,34 +1,18 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2023a utf8
 
-EXTERNPROTO "../protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
-EXTERNPROTO "../protos/Road.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadLine.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidRoundedBox.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidPipe.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.1865324782408456 -0.23070168357623763 -0.9549776791927747 4.878063246539462
-  position -51.86906271364613 -111.3991010655149 56.02193046035591
-}
-TexturedBackground {
-  texture "twilight_cloudy_empty"
+  orientation 0.19420175630719572 -0.155615555778433 -0.9685398683827992 4.622091393605321
+  position -20.118370262525627 21.411326454006183 3.5828932682063455
 }
 TexturedBackgroundLight {
-}
-RectangleArena {
-  translation 1.35639 0.411838 0
-  floorSize 35 35
-  floorTileSize 20 20
-  floorAppearance Parquetry {
-    type "light strip"
-  }
-  wallThickness 0.5
-  wallHeight 1
 }
 RectangleArena {
   translation -29.7867 36.7686 1.03739e-12
@@ -40,40 +24,6 @@ RectangleArena {
   }
   wallThickness 0.5
   wallHeight 0
-}
-RectangleArena {
-  translation -60.5709 69.2032 -1.85
-  name "rectangle arena(2)"
-  floorSize 35 35
-  floorTileSize 20 20
-  floorAppearance Parquetry {
-    type "light strip"
-  }
-  wallThickness 0.5
-  wallHeight 1
-}
-SolidPipe {
-  translation -74.1397 75.406 2
-  rotation 1 0 0 -1.5707953071795862
-  height 12
-}
-SolidPipe {
-  translation -60.6807 69.4101 7
-  rotation 1 0 0 -1.5707953071795862
-  name "pipe(1)"
-  height 5
-}
-SolidPipe {
-  translation -53.934 76.2414 4
-  rotation -0.8768880072093348 -0.33990200279450433 0.3399030027945126 1.7018
-  name "pipe(3)"
-  height 8
-}
-SolidPipe {
-  translation -68.7366 59.6817 10
-  rotation -0.5697930319719425 0.5810920326059464 -0.5810920326059464 2.10577
-  name "pipe(2)"
-  height 5
 }
 SolidRoundedBox {
   translation -14.8371 31.6911 2
@@ -140,28 +90,16 @@ SolidRoundedBox {
   translation -20.0214 34.6029 1
   name "rounded box(1)"
 }
-Road {
-  translation -16 -15.5 0.25
-  width 2
-  lines [
-    RoadLine {
-      color 0 1 0
-      type "continuous"
-    }
-  ]
-  roadBorderHeight 0.4
-  wayPoints [
-    0 0 0
-    10 0 0
-    10 15 0
-    10 20 0
-    17 20 0
-    17 0 0
-    23 0 0
-    28 0 0
-    35 30 0
-    10 30 0
-    0 30 1
-    0 36 2
-  ]
+Pioneer3dx {
+  hidden position_0_0 -24.948428811904176
+  hidden position_0_1 8574.583480647812
+  hidden position_0_2 8659.584890713635
+  hidden rotation_1 0.6481409858981891 -0.538476215528983 -0.5384762090459595 1.9914580623566007
+  hidden position_1_0 -1945.6553328677649
+  hidden rotation_2 1 0 0 2.1321123579069527
+  hidden rotation_4 -0.7001800700708654 0.7001801197175164 -0.1396268936413132 2.8641327412003905
+  hidden rotation_9 0.10680729539416586 -0.10680724326980702 -0.9885263853007099 1.5823359496399583
+  translation -22.4217 29.6855 0.0948991
+  rotation 0.8537474517887573 0.49946126430648013 -0.14715207787039863 -0.029805307179586293
+  controller "cocobots_second_map_controller"
 }
